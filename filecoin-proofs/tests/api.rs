@@ -50,17 +50,17 @@ fn test_seal_lifecycle_32kib_top_8_8_2() -> Result<()> {
 
 // These tests are good to run, but take a long time.
 
-//#[test]
-//#[ignore]
-//fn test_seal_lifecycle_512mib_top_8_0_0() -> Result<()> {
-//    seal_lifecycle::<SectorShape512MiB>(SECTOR_SIZE_512_MIB)
-//}
+#[test]
+#[ignore]
+fn test_seal_lifecycle_512mib_top_8_0_0() -> Result<()> {
+   seal_lifecycle::<SectorShape512MiB>(SECTOR_SIZE_512_MIB)
+}
 
-//#[test]
-//#[ignore]
-//fn test_seal_lifecycle_32gib_top_8_8_0() -> Result<()> {
-//    seal_lifecycle::<SectorShape32GiB>(SECTOR_SIZE_32_GIB)
-//}
+#[test]
+#[ignore]
+fn test_seal_lifecycle_32gib_top_8_8_0() -> Result<()> {
+   seal_lifecycle::<SectorShape32GiB>(SECTOR_SIZE_32_GIB)
+}
 
 //#[test]
 //#[ignore]
