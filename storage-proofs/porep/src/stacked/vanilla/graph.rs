@@ -188,7 +188,7 @@ where
         mut hasher: Sha256,
     ) -> [u8; 32] {
         prefetch(&cache_parents[..BASE_DEGREE], base_data);
-        prefetch(&cache_parents[BASE_DEGREE..], exp_data);
+        // prefetch(&cache_parents[BASE_DEGREE..], exp_data);
 
         // fill buffer
         let parents = [
