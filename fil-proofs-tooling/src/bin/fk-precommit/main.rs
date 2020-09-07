@@ -24,7 +24,7 @@ const TEST_SEED: [u8; 16] = [
 
 fn main() {
     init_logger();
-    match seal_lifecycle::<SectorShape2KiB>(SECTOR_SIZE_2_KIB) {
+    match seal_lifecycle::<SectorShape32GiB>(SECTOR_SIZE_32_GIB) {
         Err(e) => println!("error seal_lifecycle: {:?}", e),
         _ => {}
     }
